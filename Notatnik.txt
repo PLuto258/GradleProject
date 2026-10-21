@@ -1,0 +1,83 @@
+PS C:\Nauka\Sem5\AplikacjePrzemysłowe\GradleProject> ./gradlew build
+Reusing configuration cache.
+
+BUILD SUCCESSFUL in 1s
+7 actionable tasks: 7 up-to-date
+Configuration cache entry reused.
+
+====================================================================================================================
+
+PS C:\Nauka\Sem5\AplikacjePrzemysłowe\GradleProject> java -jar build/libs/cmms.jar
+Maszyny (9):
+Machine[id=M-01, name=Tokarka CNC 1, type=CNC_LATHE, hall=A, installationDate=2019-03-02]
+Machine[id=M-02, name=Przenośnik taśmowy 1, type=CONVEYOR, hall=A, installationDate=2023-06-24]
+Machine[id=M-03, name=Frezarka 1, type=MILLING_MACHINE, hall=A, installationDate=2014-04-20]
+Machine[id=M-04, name=Robot spawalniczy 1, type=WELDING_ROBOT, hall=B, installationDate=2021-11-22]
+Machine[id=M-05, name=Wtryskarka 1, type=INJECTION_MOLDER, hall=B, installationDate=2024-11-03]
+Machine[id=M-06, name=Prasa hydrauliczna 1, type=HYDRAULIC_PRESS, hall=B, installationDate=2019-10-19]
+Machine[id=M-07, name=Sprężarka 1, type=COMPRESSOR, hall=C, installationDate=2022-12-30]
+Machine[id=M-08, name=Tokarka CNC 2, type=CNC_LATHE, hall=C, installationDate=2018-06-11]
+Machine[id=M-09, name=Robot spawalniczy 2, type=WELDING_ROBOT, hall=C, installationDate=2013-09-17]
+
+Zlecenia serwisowe (45):
+WorkOrder[id=WO-0001, machineId=M-06, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-03-02T15:45, closedAt=2026-03-02T23:05]
+WorkOrder[id=WO-0002, machineId=M-04, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-03-06T06:45, closedAt=2026-03-06T11:45]
+WorkOrder[id=WO-0003, machineId=M-06, type=PREVENTIVE, priority=LOW, status=DONE, reportedAt=2026-03-11T17:45, closedAt=2026-03-11T21:20]
+WorkOrder[id=WO-0004, machineId=M-09, type=INSPECTION, priority=LOW, status=DONE, reportedAt=2026-03-15T17:30, closedAt=2026-03-15T19:20]
+WorkOrder[id=WO-0005, machineId=M-09, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-03-20T20:45, closedAt=2026-03-21T01:10]
+WorkOrder[id=WO-0006, machineId=M-06, type=BREAKDOWN, priority=CRITICAL, status=CANCELLED, reportedAt=2026-03-24T19:30, closedAt=null]
+WorkOrder[id=WO-0007, machineId=M-04, type=BREAKDOWN, priority=CRITICAL, status=DONE, reportedAt=2026-03-29T08:45, closedAt=2026-03-29T15:25]
+WorkOrder[id=WO-0008, machineId=M-07, type=PREVENTIVE, priority=LOW, status=DONE, reportedAt=2026-04-02T18:45, closedAt=2026-04-02T21:45]
+WorkOrder[id=WO-0009, machineId=M-07, type=BREAKDOWN, priority=HIGH, status=DONE, reportedAt=2026-04-07T21:45, closedAt=2026-04-08T06:45]
+WorkOrder[id=WO-0010, machineId=M-02, type=BREAKDOWN, priority=HIGH, status=DONE, reportedAt=2026-04-11T09:30, closedAt=2026-04-12T03:35]
+WorkOrder[id=WO-0011, machineId=M-08, type=BREAKDOWN, priority=HIGH, status=DONE, reportedAt=2026-04-16T19:30, closedAt=2026-04-17T13:00]
+WorkOrder[id=WO-0012, machineId=M-09, type=BREAKDOWN, priority=NORMAL, status=DONE, reportedAt=2026-04-20T21:30, closedAt=2026-04-22T11:30]
+WorkOrder[id=WO-0013, machineId=M-09, type=BREAKDOWN, priority=CRITICAL, status=DONE, reportedAt=2026-04-25T18:30, closedAt=2026-04-25T23:20]
+WorkOrder[id=WO-0014, machineId=M-04, type=BREAKDOWN, priority=HIGH, status=DONE, reportedAt=2026-04-29T14:15, closedAt=2026-04-29T21:15]
+WorkOrder[id=WO-0015, machineId=M-05, type=PREVENTIVE, priority=LOW, status=DONE, reportedAt=2026-05-04T19:15, closedAt=2026-05-04T22:00]
+WorkOrder[id=WO-0016, machineId=M-06, type=BREAKDOWN, priority=CRITICAL, status=DONE, reportedAt=2026-05-08T21:15, closedAt=2026-05-09T01:05]
+WorkOrder[id=WO-0017, machineId=M-05, type=BREAKDOWN, priority=NORMAL, status=DONE, reportedAt=2026-05-13T06:45, closedAt=2026-05-14T22:45]
+WorkOrder[id=WO-0018, machineId=M-06, type=BREAKDOWN, priority=NORMAL, status=DONE, reportedAt=2026-05-17T13:00, closedAt=2026-05-18T15:00]
+WorkOrder[id=WO-0019, machineId=M-07, type=INSPECTION, priority=NORMAL, status=DONE, reportedAt=2026-05-22T10:00, closedAt=2026-05-22T12:40]
+WorkOrder[id=WO-0020, machineId=M-06, type=BREAKDOWN, priority=HIGH, status=DONE, reportedAt=2026-05-26T07:30, closedAt=2026-05-26T19:30]
+WorkOrder[id=WO-0021, machineId=M-08, type=BREAKDOWN, priority=NORMAL, status=DONE, reportedAt=2026-05-31T09:15, closedAt=2026-06-01T14:05]
+WorkOrder[id=WO-0022, machineId=M-03, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-06-04T19:30, closedAt=2026-06-05T01:45]
+WorkOrder[id=WO-0023, machineId=M-04, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-06-09T21:00, closedAt=2026-06-10T03:00]
+WorkOrder[id=WO-0024, machineId=M-05, type=INSPECTION, priority=LOW, status=DONE, reportedAt=2026-06-13T10:30, closedAt=2026-06-13T11:45]
+WorkOrder[id=WO-0025, machineId=M-03, type=INSPECTION, priority=NORMAL, status=DONE, reportedAt=2026-06-18T21:15, closedAt=2026-06-18T23:15]
+WorkOrder[id=WO-0026, machineId=M-05, type=BREAKDOWN, priority=HIGH, status=DONE, reportedAt=2026-06-22T13:15, closedAt=2026-06-22T23:35]
+WorkOrder[id=WO-0027, machineId=M-04, type=BREAKDOWN, priority=CRITICAL, status=DONE, reportedAt=2026-06-27T09:45, closedAt=2026-06-27T12:15]
+WorkOrder[id=WO-0028, machineId=M-03, type=BREAKDOWN, priority=NORMAL, status=DONE, reportedAt=2026-07-01T20:30, closedAt=2026-07-02T16:45]
+WorkOrder[id=WO-0029, machineId=M-01, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-07-06T21:00, closedAt=2026-07-07T01:00]
+WorkOrder[id=WO-0030, machineId=M-01, type=BREAKDOWN, priority=CRITICAL, status=DONE, reportedAt=2026-07-10T14:00, closedAt=2026-07-10T17:15]
+WorkOrder[id=WO-0031, machineId=M-01, type=PREVENTIVE, priority=NORMAL, status=CANCELLED, reportedAt=2026-07-15T18:45, closedAt=null]
+WorkOrder[id=WO-0032, machineId=M-01, type=PREVENTIVE, priority=LOW, status=DONE, reportedAt=2026-07-19T15:45, closedAt=2026-07-19T17:55]
+WorkOrder[id=WO-0033, machineId=M-08, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-07-24T21:15, closedAt=2026-07-25T02:05]
+WorkOrder[id=WO-0034, machineId=M-08, type=PREVENTIVE, priority=NORMAL, status=DONE, reportedAt=2026-07-28T18:45, closedAt=2026-07-29T00:25]
+WorkOrder[id=WO-0035, machineId=M-08, type=BREAKDOWN, priority=CRITICAL, status=DONE, reportedAt=2026-08-02T19:45, closedAt=2026-08-02T22:05]
+WorkOrder[id=WO-0036, machineId=M-04, type=BREAKDOWN, priority=HIGH, status=DONE, reportedAt=2026-08-06T12:15, closedAt=2026-08-07T09:15]
+WorkOrder[id=WO-0037, machineId=M-06, type=INSPECTION, priority=NORMAL, status=DONE, reportedAt=2026-08-11T15:15, closedAt=2026-08-11T17:40]
+WorkOrder[id=WO-0038, machineId=M-02, type=INSPECTION, priority=LOW, status=DONE, reportedAt=2026-08-15T14:30, closedAt=2026-08-15T16:00]
+WorkOrder[id=WO-0039, machineId=M-02, type=PREVENTIVE, priority=LOW, status=DONE, reportedAt=2026-08-20T06:15, closedAt=2026-08-20T09:45]
+WorkOrder[id=WO-0040, machineId=M-05, type=BREAKDOWN, priority=CRITICAL, status=DONE, reportedAt=2026-08-24T07:00, closedAt=2026-08-24T08:45]
+WorkOrder[id=WO-0041, machineId=M-05, type=PREVENTIVE, priority=LOW, status=OPEN, reportedAt=2026-09-11T08:00, closedAt=null]
+WorkOrder[id=WO-0042, machineId=M-04, type=BREAKDOWN, priority=HIGH, status=IN_PROGRESS, reportedAt=2026-09-15T08:00, closedAt=null]
+WorkOrder[id=WO-0043, machineId=M-02, type=BREAKDOWN, priority=HIGH, status=OPEN, reportedAt=2026-09-17T10:15, closedAt=null]
+WorkOrder[id=WO-0044, machineId=M-03, type=BREAKDOWN, priority=NORMAL, status=OPEN, reportedAt=2026-09-18T22:30, closedAt=null]
+WorkOrder[id=WO-0045, machineId=M-08, type=BREAKDOWN, priority=HIGH, status=OPEN, reportedAt=2026-09-19T02:45, closedAt=null]
+
+Niezakończone zlecenia według priorytetu:
+LOW: 1
+NORMAL: 1
+HIGH: 3
+CRITICAL: 0
+
+Trzy maszyny z największą liczbą awarii:
+M-04 (Robot spawalniczy 1): 5
+M-08 (Tokarka CNC 2): 4
+M-05 (Wtryskarka 1): 3
+
+MTTR zakończonych awarii według hal:
+A: 13 godz. 51 min
+B: 13 godz. 6 min
+C: 16 godz. 45 min
