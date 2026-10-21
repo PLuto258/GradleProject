@@ -1,0 +1,6 @@
+# Gradle cache and build output
+.gradle/
+build/
+
+# Kotlin plugin data
+.kotlin/
